@@ -38,7 +38,7 @@ function App() {
 
       if (/\d|\./.test(char)) {
         operand += char;
-      } else if (/\+|\-|\*|\//.test(char)) {
+      } else if (/\+|-|\*|\//.test(char)) {
         result = performOperation(result, operator, parseFloat(operand));
         operator = char;
         operand = "";
